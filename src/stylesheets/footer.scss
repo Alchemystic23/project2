@@ -1,0 +1,100 @@
+$navy: #030039;
+$purple: #671675;
+$pink: #F85B82;
+$blue: #7DB3DB;
+
+$primary: $navy;
+$secondary: $pink;
+
+
+@mixin small-btn {  
+    font-family: Playfair Display;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: solid white 2px;
+    width: 150px;
+    background-color: $primary;
+    color: white;
+  }
+
+footer {
+    color: white;
+    background-color: $secondary;
+    font-family: Playfair Display;
+    font-weight: regular;
+    width: 100%;
+    padding-top: .01rem;
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .foot-brand {
+        img {
+            height: 75px;
+            width: auto;
+        }
+
+        p {
+            font-family: Montserrat;
+            font-variant: small-caps;
+            font-weight: light;
+        }
+    }
+
+    .foot-content {
+        padding-left: 100px;
+        padding-right: 100px;
+         .form {
+            input {
+                font-family: Homemade Apple;
+                border-radius: 15px;
+                width: 400px;
+            }         
+
+            .small {
+                @include small-btn;
+            }
+         }
+
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+        .right{
+            img {
+                height: 30px;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    footer {
+        
+        h3{
+            font-size: 16px;
+        }
+
+        .foot-content {
+             .form {
+                input {
+                    font-size: 12px
+                }         
+    
+                .small {
+                    @include small-btn;
+                    font-size: 12px;
+                }
+             }
+    
+        }
+    }
+}

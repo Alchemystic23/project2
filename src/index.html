@@ -13,15 +13,125 @@
 
 <body>
   <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
+  <header>
+  <nav class="navbar navbar-expand-sm menu shadow">
+    <div class="container d-flex flex-column align-items-center">
+
+      <h1 class="text-center w-100 my-3">Battle Bots Studio</h1>
+
+      <a class="navbar-brand mx-auto" href="#">
+        <img src="images/logo.png" alt="logo image" style="height: 75px; width: auto;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+          <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="main">
+
+  <div class="hero-image">
+    <img src="images/hero1.png" alt="robots fighting">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Stay in the Loop</h1>
+        <h2>Streaming live at 4pm EST every tuesday</h2>
+        <a class="btn large" href="more.html" role="button">Watch Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
     
-    Project 2: A multiple-page project of your choosing.
-  </h1>
+    <h3>Battle Bots Studio Live Streams</h3>
+    <p>At Battle Bots Studio, we are excited to offer live streams showcasing demos of our latest games as they are released as well as behind-the-scenes looks at the production and design process. Join us as we dive into the heart-pounding action and strategic gameplay of our new titles, providing our fans and followers with an exclusive sneak peek. With engaging gameplay footage, our live streams bring the thrill of Battle Bots Studio directly to our audience, allowing them to witness the adrenaline-fueled excitement of our cutting-edge games firsthand. Stay tuned for upcoming live streams to experience the future of gaming with Battle Bots Studio!</p>
+
+    <h3 class="text-center">Latest Game Showcase</h3>
+    <p>Discover the thrill of robotic combat with our latest games lineup! Engage in fast-paced battles with Metal Mayhem and Circuit Clash, available now for play. Get an exclusive sneak peek into the future of Battle Bots Studio with our early access title Necromancer's Quest, currently in development. Dive into the world of cutting-edge technology and strategic warfare today.</p>
+
+    <div class="gallery mt-5 mb-5">
+
+      <div class="image-container">
+        <a href="more.html">
+          <img src="images/game1.png" alt="Learn More about game 1" class="interactive-image p-1">
+          <div class="overlay">
+            <div class="text">Learn More</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="image-container">
+        <a href="more.html">
+          <img src="images/game2.png" alt="Learn More about game 2" class="interactive-image p-1">
+          <div class="overlay">
+            <div class="text">Learn More</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="image-container">
+        <a href="more.html">
+          <img src="images/game3.png" alt="Learn More about game 3" class="interactive-image p-1">
+          <div class="overlay">
+            <div class="text">Learn More</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<footer>
+    <div class="foot-brand d-flex flex-row align-items-center my-3">
+      <img src="images/logo shape.png" alt="logo with shape">
+      <p>Battle Bots Studio</p>
+    </div>
+
+    <div class="foot-content d-flex flex-column align-items-center mx-5">
+      <div id="liveAlertPlaceholder" class="pt-1"></div>
+      <h3 class="text-center">Unlock exclusive content, behind-the-scenes sneak peaks, and thrilling game updates straight to your inbox!</h3>
+      <div class="container-fluid form">
+        <form class="d-flex justify-content-center" role="search">
+          <input class="form-control me-2" type="search" placeholder="Name@email.com" aria-label="Search">
+          <button class="btn small" type="button" id="liveAlertBtn">Subscribe Now</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="contact text-center">
+      <div class="left">
+        <h3>Contact Us <br> <br> Business@email.com</h3>
+      </div>
+
+      <div class="right">
+        <h3>Find us on Social Media</h3>
+        <br>
+        <a href="#"><img src="images/icons8-facebook-480.png" alt="facebook link"></a>
+        <a href="#"><img src="images/icons8-instagram-480.png" alt="instagram link"></a>
+        <a href="#"><img src="images/icons8-twitter-480.png" alt="twitter link"></a>
+        <a href="#"><img src="images/icons8-youtube-480.png" alt="youtube link"></a>
+      </div>
+
+    </div>
+
+  </footer>
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>
