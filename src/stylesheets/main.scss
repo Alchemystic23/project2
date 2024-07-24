@@ -182,27 +182,26 @@ body {
 
 //about.html gallery styles
 .about-gallery {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
       img {
-          display: flex;
-          justify-content: center;
-          align-items: center;
           width: 100%;
-          height: auto;           
+          height: auto; 
+          max-width: 100%;
+          max-height: 80vh;          
       }
 
       h4 {
         margin-top: 20px;
         margin-bottom: 20px;
+        text-align: center;
       }
 
       p {
         font-family: Montserrat;
         margin-bottom: 45px;
+        text-align: center;
       }
 }
 
@@ -280,10 +279,6 @@ $box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 .dropdown-menu p {
   padding: 10px;
   margin: 0;
-}
-
-.dropdown-menu::before {
-  display: none;
 }
 
 .coming-gallery {

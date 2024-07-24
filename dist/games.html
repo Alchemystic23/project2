@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>WEB 2890 - Project 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="TODO: Project 2 ...">
+
+  
+  <script type="module" crossorigin src="/assets/main.f449e4a9.js"></script>
+  <link rel="stylesheet" href="/assets/main.71280954.css">
+</head>
+
+<body>
+  <!-- Your HTML goes here -->
+  <header>
+  <nav class="navbar navbar-expand-sm menu shadow">
+    <div class="container d-flex flex-column align-items-center">
+
+      <h1 class="text-center w-100 my-3">Battle Bots Studio</h1>
+
+      <a class="navbar-brand mx-auto" href="index.html">
+        <img src="/assets/logo.ffd2e929.png" alt="logo image" style="height: 75px; width: auto;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="games.html">Games</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+          <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+<section class="main">
+
+  <div class="game-banner">
+
+    <div class="content d-flex flex-row">
+      <h2>Supported <br> Platforms</h2>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAABvklEQVR4nO3cQU7CQACF4VlZj6DoEUV34g3kZKIr4RBcgLJh9cwkXZjYtOnYeaXT/0vYsCgzP9OWNGFCAAAAAAAAAAB0kXQr6UXSl6SzhjtL+pT0LKnqq635GDSvvkk/SjqMOLh9PGYhoQfNq28lHzINqiosdO+8ukLHy0Uu6wJDd86rK3S8JueyKzT0LiV0nXFAdaGh65TQWYWZG21ehO5GaBNCmxDahNAmhDYhtAmhTQhtQmgTQpsQ2oTQJoQ2IbQJoU0IbUJoE0KbENqE0CaENiG0CaFNCG1CaBNCmxDahNAmsw+tmSO0CaFNSg59kfQqadW8Ns17kyg59KblGDH2JEoOfd9yjDsVFjr5tA3jhV61HCOOZQqnXKGTT9swXui2MbxpRn9/y7qawnihL82Xew03w6eSQ1+Lb0k3uUInn7ahrNAx8sPgyAMmnHzahvmHjv8s/oiXi6SV7JpwAKGtWNEmhDYhtAmhTTJvjHLq+NypHCVt//VTLTH0Urf62bpDx/3c7M8ENL2jO3TVbDFmfSagpYX+tcHg3vlMQNN79xX+u7LX8bqaeIOshzwT0NJuhgAAAAAAAAAQFuEH0bDA1fIiDEEAAAAASUVORK5CYII=" alt="pc support">
+      <img src="data:image/png;base64,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" alt="switch support">
+      <img src="/assets/icons8-xbox-480.b89ff8de.png" alt="xbox support">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGPUlEQVR4nO2da4xdUxTHt7ZKq623qqCUQYUU5YN4NUHQetNoECJoaEgfH4gQQVW8Em9SBIl4VhD1gSji/SxFBpEiOtUq+kDVUDM/Wblr5PSkd+6956w953Sf/UsmmUzm/s/ee52z915rnb2uc5FIJBKJRCKRSCRScYDxwPfAP8A8YBqwW9HtqizAYtbPl8BNwGFA/6LbWRlojuXA08A5wBZFtzloaJ1/gbeBy4G9i25/cJCfb4E7gKOAjYvuzwYPtqxITG1bFt23DRL8Eae2khkkzdfAdcBo87sqJCiG14ATgY2K7n/poFg+BMYVPQalguLpBh6J/k15DNKDhG8OclWHctEJnOGqDOWjCzjbVRXKyVrZhbkqQnn5vZKxMspNO7CpqxKUn2tclcDPTsmSP4GdXFXAnjHAr8aa97qqgDGqea6Hp2QbVwUwRjW3stYFLnVVAGN86QLvuSqAMb501YMPf9rCGF+6yqkudDDGl65yvQsdjPGlq7zgQgdjfOkqn7rQwRhfusoyFzoY40tXWe1CB2N86SpdLnQwxpeu0ulCB2N86SqrXOhgjC9dZZELHYzxpat84EIHY3zpKs+60MEYX7rKTBc6GONLV5noQgdjfOnqO8DDXehgjC9d4GNXBTDGly4w3VUBjPGk+1tlzixijCfdq1xVwBgPuguAgS5kgCGJ301J6C41kFsC7OpCBBgAHAc8Ji+eJf5uSkL3QmBNDqkvgiyCAxwI3A78VGfgTElde4TM/8A3LUjIkzUdGORCAdhFB+KrRgOHMb20aUdgEnArMAd4VXwL4B15eQG4WZ/gMAwhp1i1pMUr6tU2NXD0kUEqAbAJcIpEQVs9BlA2gwD9gW2BPYGxiZ/RwKjS+iFS/UCLis3WYi+5Bg5jGrR9GHAoMAW4DXge+KyFfshN1yF5EeBJ4ArgBJmi+2TwU53ZS8LPep7bbOAwJqHbD9gXuAR4Sss4NZxKc/CLGul8YGdfRhgOTAU+sm59HxhkOcUiJQqvlunOYl04TXcecjzYC31gkLIgT+WbwEktFbuRRQu4Mu0vGPMdMAvYp0IGSRe76b18h861F3t8xJdqCb6D13eHYIyhbodWp5Ob9HTdyMiuqw04EpgBPKeF0lphbd1QPrC9OkjWrAQeAo5uVOIVY3LorlKHUUIuI3u9i9dtvxhpWYbrXZYW2h34ATvW6G7mZFmHWuiQKS3qrtDSTBPyRHSBYzKuLWOTuyd5JC34HJgMDM3YGVOa0BVf4hm9cczC6hmPYs/p+bCEN/LyrkU1NoypoyvnA9/Q6ci8ELOUp9XaKK2yRD58vEE6U56IfkadMSWl267edNNrQsY+iMOchb+cxp3yLNZjjDtjSkL3AMt21mm7nId/MEdzO/Jm0s7z0ClTrNtXp80j9KnIHMtT7hOxvzN+uDuZejXsnCnW7Uu0c6Aci9YIhny1Rl5Wy05XhH/MKLA2b/IG2E6/H2RB4m+mmIz+upFtcWjvNi5oI5uMs3ouMj+H0KycsbH/76wyG4RaTkSqYC+0bp8+GZOSFxMPOg8PAFs36NBm6mw9XG+eLZtBqK0L03xEtlMVtfdIX1iijhbliuYC12q+YbJuL+9X/6ThHFsGgwBDNe38coaYVCtrr/h9E+o1YhDwMwVTlEGoOXGS5Xsi52tCzfhrd0pir5k74wIqZBBqi/MhwD0eqs2lma8p4uZDSRpy9xHlLZVBqL2gMFPzMD5ZqJuAxk9DL0YZArxF3yNbvvd9G4R8u8lmkJD7XfXyPFmNMlQXYp/Jf9QZfQm4CNgh1QZTfOkqfwCP6gt1A0yMUMcwR2je18owsmP5RBe1icDmvVzbFA+6smN8EThTtvPejFBncNp0zn1dM2jN7iZk7/64vmUhyZphLVzTFCPdbv1qvimlKeunO5M2nSOPla9x0HdjxeE7HNhfUsAG11mBIQndLLRrDj3MIwjNQO29L7M1LKHbLJI5vQXYr9iRKBHUXhS4Qc9k9IVBVmoeY5xVoi1YgJEaipmbpY57QidNp2pKqGRwsb3cQAEGa5hjth4va9UgXbo4Ty3N4hwK1I4LSPjjRl1818fixP/PSPs8Eb8GGqV3/jz1FRYB4+OgRyKRSCQSiUQikUgkEnGZ+Q+QsCyof81vwAAAAABJRU5ErkJggg==" alt="playstation support">
+    </div>
+
+    <h1 class="text-center" style="margin-top: 15px;">Games</h1>
+    <h4 class="text-center">Check out games out now and learn more about games up and coming</h4>
+  </div>
+
+  <div class="game-gallery">
+
+    <div class="dropdown">
+      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration: none;">
+        <img src="/assets/game6.d92175bf.png" alt="game 6">
+      </a>
+    
+      <div class="dropdown-menu">
+        <p>Content coming soon</p>
+        
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a class="dropdown-toggle d-block" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration: none;">
+        <img src="/assets/game5.cd54bce1.png" alt="Necromancer’s Quest">
+      </a>
+    
+      <div class="dropdown-menu">
+        <h4>Necromancer's Quest</h4>
+        <p>
+          In "Necromancer's Quest," players embark on a thrilling journey that begins in a quaint village nestled at the foot of a foreboding mountain. You start the game as a young child, a blank slate with unlimited potential. Your decisions shape your destiny, determining your role and playstyle as you ascend the treacherous mountain to confront the darkness that looms above.
+        <br>
+          Your goal is to climb to the mountain's peak, growing in strength and wisdom with each step, to rescue the princess from the clutches of the malevolent Laubres. With Seras by your side, you'll uncover secrets, develop your powers, and face formidable foes, all in the name of saving the kingdom from darkness.</p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration: none;">
+        <img src="/assets/game7.4e31bf9f.png" alt="game 7">
+      </a>
+    
+      <div class="dropdown-menu">
+        <p>Content coming soon</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="coming-gallery">
+
+    <h1>Up and Coming</h1>
+    <h4>See what we're working on next</h4>
+
+    <div class="image-cards">
+    <div class="image-container">
+      <a href="more.html">
+        <img src="/assets/game8.f57a8be7.png" alt="Learn More about game 8" class="interactive-image p-1">
+        <div class="overlay">
+          <div class="text" style="font-family: Playfair Display;">Learn More</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="image-container">
+      <a href="more.html">
+        <img src="/assets/game1.89fa8c0b.png" alt="Learn More about game 1" class="interactive-image p-1">
+        <div class="overlay">
+          <div class="text" style="font-family: Playfair Display;">Learn More</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="image-container">
+      <a href="more.html">
+        <img src="/assets/game4.7148b844.png" alt="Learn More about game 4" class="interactive-image p-1">
+        <div class="overlay">
+          <div class="text" style="font-family: Playfair Display;">Learn More</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  </div>
+
+</section>
+
+
+<footer>
+    <div class="foot-brand d-flex flex-row align-items-center my-3">
+      <img src="/assets/logo shape.becff98a.png" alt="logo with shape">
+      <p>Battle Bots Studio</p>
+    </div>
+
+    <div class="foot-content d-flex flex-column align-items-center mx-5">
+      <div id="liveAlertPlaceholder" class="pt-1"></div>
+      <h3 class="text-center">Unlock exclusive content, behind-the-scenes sneak peaks, and thrilling game updates straight to your inbox!</h3>
+      <div class="container-fluid form">
+        <form class="d-flex justify-content-center" role="search">
+          <input class="form-control me-2" type="search" placeholder="Name@email.com" aria-label="Search">
+          <button class="btn small" type="button" id="liveAlertBtn">Subscribe Now</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="contact text-center">
+      <div class="left">
+        <h3>Contact Us <br> <br> Business@email.com</h3>
+      </div>
+
+      <div class="right">
+        <h3>Find us on Social Media</h3>
+        <br>
+        <a href="#"><img src="/assets/icons8-facebook-480.e4049ac8.png" alt="facebook link"></a>
+        <a href="#"><img src="/assets/icons8-instagram-480.7082a237.png" alt="instagram link"></a>
+        <a href="#"><img src="/assets/icons8-twitter-480.aa96f68d.png" alt="twitter link"></a>
+        <a href="#"><img src="/assets/icons8-youtube-480.8298368d.png" alt="youtube link"></a>
+      </div>
+
+    </div>
+
+  </footer>
+
+  
+</body>
+</html>
